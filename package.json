@@ -26,7 +26,9 @@
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web#readme",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.3",
+    "prettier-plugin-jsdoc": "^0.4.2",
     "prettier-plugin-tailwindcss": "^0.2.1"
   }
 }
