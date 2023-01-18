@@ -11,10 +11,16 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.5.6",
-    "@strapi/plugin-users-permissions": "4.5.6",
+    "@api.video/strapi-uploader-plugin": "^1.0.0",
+    "@palmabit/strapi-app-version": "^1.1.0",
+    "@strapi/plugin-color-picker": "^4.5.6",
+    "@strapi/plugin-graphql": "^4.5.6",
     "@strapi/plugin-i18n": "4.5.6",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.5.6",
+    "@strapi/strapi": "4.5.6",
+    "better-sqlite3": "7.4.6",
+    "strapi-plugin-oembed": "^1.0.1",
+    "strapi-plugin-sitemap": "^2.0.9"
   },
   "author": {
     "name": "A Strapi developer"
