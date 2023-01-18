@@ -2,6 +2,11 @@
   "name": "ccs-next",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">= 6.0.0",
+    "yarn": "READ: please use npm"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

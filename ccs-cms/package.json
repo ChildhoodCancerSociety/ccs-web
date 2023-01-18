@@ -34,7 +34,8 @@
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "npm": ">=6.0.0",
+    "yarn": "READ: please use npm"
   },
   "license": "MIT"
 }

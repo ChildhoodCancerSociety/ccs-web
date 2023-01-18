@@ -1,0 +1,10 @@
+{
+  "[javascript][typescript]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 180
+  },
+  "[typescriptreact]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 240
+  }
+}
