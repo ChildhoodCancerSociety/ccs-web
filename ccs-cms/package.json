@@ -12,14 +12,18 @@
   "devDependencies": {},
   "dependencies": {
     "@api.video/strapi-uploader-plugin": "^1.0.0",
+    "@offset-dev/strapi-calendar": "^0.0.10",
     "@palmabit/strapi-app-version": "^1.1.0",
     "@strapi/plugin-color-picker": "^4.5.6",
     "@strapi/plugin-graphql": "^4.5.6",
     "@strapi/plugin-i18n": "4.5.6",
+    "@strapi/plugin-seo": "^1.7.7",
     "@strapi/plugin-users-permissions": "4.5.6",
     "@strapi/strapi": "4.5.6",
     "better-sqlite3": "7.4.6",
+    "strapi-plugin-comments": "^2.2.4",
     "strapi-plugin-oembed": "^1.0.1",
+    "strapi-plugin-placeholder": "^4.3.6",
     "strapi-plugin-sitemap": "^2.0.9"
   },
   "author": {
