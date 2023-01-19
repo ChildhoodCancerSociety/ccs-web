@@ -8,8 +8,10 @@
   "arrowParens": "avoid",
   "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
   "importOrder": [
-    "@next",
-    "next",
+    "^(react/(.*)$)|^(react$)",
+    "^(@next$)",
+    "^(next/.*)$",
+    "^(@next/(.*)$)|^(@next$)",
     "<THIRD_PARTY_MODULES>",
     "^[./]"
   ],
