@@ -5,7 +5,8 @@
   "main": "./scripts/auto.js",
   "scripts": {
     "test": "node e2e/e2e.js",
-    "start": "node scripts/auto.js"
+    "start": "node scripts/auto.js",
+    "fmt": "prettier --write \"./**/*.{ts,tsx,js}\""
   },
   "repository": {
     "type": "git",
