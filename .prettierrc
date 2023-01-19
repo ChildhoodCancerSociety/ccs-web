@@ -6,8 +6,13 @@
   "tabWidth": 2,
   "semi": true,
   "arrowParens": "avoid",
-  "plugins": ["@trivago/prettier-plugin-sort-imports","pretter-plugin-tailwindcss"],
-  "importOrder": [],
+  "plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  "importOrder": [
+    "@next",
+    "next",
+    "<THIRD_PARTY_MODULES>",
+    "^[./]"
+  ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
   "bracketSameLine": true,
