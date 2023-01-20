@@ -1,5 +1,4 @@
-import { Inter } from "@next/font/google";
-
+// import { Inter } from "@next/font/google";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -23,8 +22,12 @@ export default function Home() {
             <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
-            <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app" target="_blank" rel="noopener noreferrer">
-              By <Image src="/vercel.svg" alt="Vercel Logo" className={styles.vercelLogo} width={100} height={24} priority />
+            <a
+              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer">
+              By&nbsp;
+              <Image src="/vercel.svg" alt="Vercel Logo" className={styles.vercelLogo} width={100} height={24} priority />
             </a>
           </div>
         </div>
@@ -42,10 +45,11 @@ export default function Home() {
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer">
-            <h2 className={""}>
-              Docs <span>-&gt;</span>
+            <h2 className="">
+              Docs&nbsp;
+              <span>-&gt;</span>
             </h2>
-            <p className={""}>Find in-depth information about Next.js features and&nbsp;API.</p>
+            <p className="">Find in-depth information about Next.js features and&nbsp;API.</p>
           </a>
 
           <a
@@ -53,10 +57,11 @@ export default function Home() {
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer">
-            <h2 className={""}>
-              Learn <span>-&gt;</span>
+            <h2 className="">
+              Learn&nbsp;
+              <span>-&gt;</span>
             </h2>
-            <p className={""}>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+            <p className="">Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
           </a>
 
           <a
@@ -64,10 +69,11 @@ export default function Home() {
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer">
-            <h2 className={""}>
-              Templates <span>-&gt;</span>
+            <h2 className="">
+              Templates&nbsp;
+              <span>-&gt;</span>
             </h2>
-            <p className={""}>Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
+            <p className="">Discover and deploy boilerplate example Next.js&nbsp;projects.</p>
           </a>
 
           <a
@@ -75,10 +81,11 @@ export default function Home() {
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer">
-            <h2 className={""}>
-              Deploy <span>-&gt;</span>
+            <h2 className="">
+              Deploy&nbsp;
+              <span>-&gt;</span>
             </h2>
-            <p className={""}>Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
+            <p className="">Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.</p>
           </a>
         </div>
       </main>
