@@ -16,5 +16,8 @@
   },
   "globals": {
     "strapi": true
+  },
+  "rules": {
+    "quotes": ["warn", "double"]
   }
 }
