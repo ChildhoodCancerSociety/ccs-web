@@ -12,9 +12,11 @@
     }],
     "quotes": ["error", "double"],
     "@typescript-eslint/quotes": 0,
-    "react/jsx-closing-bracket-location": 0
+    "react/jsx-closing-bracket-location": 0,
+    "object-curly-newline": 0
   },
   "parserOptions": {
     "project": "**/tsconfig.json"
-  }
+  },
+  "ignorePatterns": ["**/*.config.js"]
 }
