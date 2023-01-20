@@ -1,16 +1,22 @@
 {
-  "[javascript][typescript]": {
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.format.semicolons": "insert",
+  "typescript.format.insertSpaceAfterCommaDelimiter": true,
+  "javascript.inlayHints.enumMemberValues.enabled": true,
+  "[javascript][typescript][typescriptreact]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 180
-  },
-  "[typescriptreact]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 240
+    "editor.wordWrapColumn": 160,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "files.associations": {
     "*.css": "tailwindcss"
   },
   "editor.quickSuggestions": {
     "strings": "on"
+  },
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true 
   }
 }
