@@ -1,3 +1,1 @@
-export default function Slug() {
-
-}
+export default function Slug() {}
