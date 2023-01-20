@@ -1,3 +1,20 @@
 {
-  "extends": ["next/babel", "next/core-web-vitals"]
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    "max-len": ["error", {
+      "code": 160
+    }],
+    "quotes": ["error", "double"],
+    "@typescript-eslint/quotes": 0,
+    "react/jsx-closing-bracket-location": 0
+  },
+  "parserOptions": {
+    "project": "**/tsconfig.json"
+  }
 }
