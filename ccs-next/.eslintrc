@@ -20,7 +20,8 @@
     "react/jsx-closing-bracket-location": 0,
     "object-curly-newline": 0,
     "@next/next/no-html-link-for-pages": ["warn", "ccs-next/pages"],
-    "jsdoc/require-jsdoc": 0
+    "jsdoc/require-jsdoc": 0,
+    "react/jsx-props-no-spreading": 0
   },
   "parserOptions": {
     "project": "**/tsconfig.json"
