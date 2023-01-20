@@ -2,7 +2,6 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "christian-kohler.npm-intellisense",
-    "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "GitHub.vscode-pull-request-github"
   ]
