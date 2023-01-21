@@ -7,9 +7,9 @@
     "next",
     "next/core-web-vitals",
     "airbnb",
+    "plugin:react/jsx-runtime",
     "airbnb-typescript",
-    "plugin:jsdoc/recommended",
-    "plugin:react/jsx-runtime"
+    "plugin:jsdoc/recommended"
   ],
   "rules": {
     "max-len": ["error", {
