@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      ccs: {
+      // FIXME: lets make a better name for this
+      primary: {
         "50": "#FAEEFF",
         "100": "#F4DBFF",
         "200": "#B991CC",
@@ -19,6 +20,19 @@ module.exports = {
         "700": "#34034D",
         "800": "#2A043F",
         "900": "#230533"
+      },
+      // FIXME: and this!
+      secondary: {
+        "50": "#EEFFEB",
+        "100": "#B9EFAD",
+        "200": "#94E17F",
+        "300": "#6EC951",
+        "400": "#52B72E",
+        "500": "#3B9614",
+        "600": "#296A0A",
+        "700": "#1A3C07",
+        "800": "#0F2005",
+        "900": "#091104"
       }
     }
   },
