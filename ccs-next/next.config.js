@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+/** @type {import("next").NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   async redirects() {
@@ -10,6 +10,6 @@ const nextConfig = {
       }
     ];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

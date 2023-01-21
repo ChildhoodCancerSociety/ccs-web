@@ -5,6 +5,6 @@ const salt = crypto.randomBytes(16).toString("base64");
 console.info(salt);
 
 try {
-  execSync("pbcopy " + salt, { stdio: 'ignore' });
+  execSync("pbcopy " + salt, { stdio: "ignore" });
   console.log("Copied to clipboard!");
-} catch {};
+} catch {}
