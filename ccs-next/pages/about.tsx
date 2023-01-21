@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import TabbedPage from "../structure/tabbed-page";
 
-const AboutPageOld: React.FC = function AboutPageOld() {
+const AboutPageOld: React.FC = function FC() {
   return (
     <>
       <Head>
@@ -17,7 +17,7 @@ const AboutPageOld: React.FC = function AboutPageOld() {
   );
 };
 
-const AboutPageNew: React.FC = function AboutPageNew() {
+const AboutPageNew: React.FC = function FC() {
   return (
     <>
       <Head>
@@ -32,7 +32,7 @@ const AboutPageNew: React.FC = function AboutPageNew() {
   );
 };
 
-const AboutPage: React.FC = function AboutPage() {
+const AboutPage: React.FC = function FC() {
   return (<TabbedPage components={[{ name: "Old", Component: AboutPageOld }, { name: "New", Component: AboutPageNew }]} />);
 };
 
