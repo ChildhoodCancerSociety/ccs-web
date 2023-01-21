@@ -8,20 +8,20 @@
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
-    "plugin:react/jsx-runtime",
-    "plugin:jsdoc/recommended"
+    "plugin:jsdoc/recommended",
+    "plugin:react/jsx-runtime"
   ],
   "rules": {
     "max-len": ["error", {
       "code": 160
     }],
     "quotes": ["error", "double"],
-    "@typescript-eslint/quotes": 0,
-    "react/jsx-closing-bracket-location": 0,
     "object-curly-newline": 0,
+    "react/jsx-props-no-spreading": 0,
+    "@typescript-eslint/quotes": 0,
+    "@typescript-eslint/no-unused-vars": 0,
     "@next/next/no-html-link-for-pages": ["warn", "ccs-next/pages"],
-    "jsdoc/require-jsdoc": 0,
-    "react/jsx-props-no-spreading": 0
+    "jsdoc/require-jsdoc": 0
   },
   "parserOptions": {
     "project": "**/tsconfig.json"
