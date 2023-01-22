@@ -34,6 +34,10 @@ module.exports = {
         "800": "#0F2005",
         "900": "#091104"
       }
+    },
+    fontFamily: {
+      "header": ["Signika"],
+      "body": ["Lexend Deca"]
     }
   },
   plugins: [
