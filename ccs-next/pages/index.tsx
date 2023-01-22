@@ -3,7 +3,7 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 
-import styles from "../styles/Home.module.css";
+// import styles from "../styles/Home.module.css";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -16,11 +16,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1>Childhood Cancer Society</h1>
-        <h2>Childhood Cancer Society</h2>
-        <h1>CCS</h1>
-        <h2>CCS</h2>
+      <main className="p-2">
+        <h1 className="text-4xl">Childhood Cancer Society</h1>
+        <h2 className="text-2xl">CCS</h2>
+        <div>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
       </main>
     </>
   );
