@@ -1,4 +1,4 @@
 {
-  "presets": ["next/babel", "airbnb"],
+  "presets": ["airbnb", "next/babel", "@babel/preset-react"],
   "plugins": []
 }
