@@ -24,5 +24,7 @@
     "url": "https://github.com/ChildhoodCancerSociety/ccs-web/issues"
   },
   "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
