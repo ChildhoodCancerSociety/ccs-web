@@ -36,8 +36,9 @@ module.exports = {
       }
     },
     fontFamily: {
-      "header": ["Signika"],
-      "body": ["Lexend Deca"]
+      "header": "Signika",
+      "body": "Lexend Deca",
+      "sans": "Lexend Deca"
     }
   },
   plugins: [
