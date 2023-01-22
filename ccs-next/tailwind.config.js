@@ -1,8 +1,9 @@
+const colors = require('tailwindcss/colors');
+
 /** @type {import("tailwindcss").Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,css}",
-    "./components/**/*.{js,ts,jsx,tsx,css}",
+    "./{pages,components,structure}/**/*.{js,ts,jsx,tsx,css}",
     "./styles/**/*.css"
   ],
   darkMode: 'class',
@@ -34,7 +35,8 @@ module.exports = {
         "700": "#1A3C07",
         "800": "#0F2005",
         "900": "#091104"
-      }
+      },
+      ...colors
     },
     fontFamily: {
       "header": "Signika",
