@@ -1,5 +1,6 @@
-import React from "react";
 import { Head, Html, Main, NextScript } from "next/document";
+
+import { Footer, Header } from "ccs@structure";
 
 export default function Document() {
   return (
@@ -10,7 +11,9 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;700&family=Signika:wght@300;500&display=swap" rel="stylesheet" />
       </Head>
       <body>
+        <Header />
         <Main />
+        <Footer />
         <NextScript />
       </body>
     </Html>

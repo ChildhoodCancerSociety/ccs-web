@@ -11,6 +11,9 @@ interface Swatch {
   "900": string;
 }
 
+/**
+ * **NOTE**: If *at all* possible, use tailwind classes over this!
+ */
 export const primary: Swatch = {
   50: "#FEEEFF",
   100: "#FBD9FF",
@@ -24,6 +27,9 @@ export const primary: Swatch = {
   900: "#0C010F",
 };
 
+/**
+ * **NOTE**: If *at all* possible, use tailwind classes over this!
+ */
 export const secondary: Swatch = {
   50: "#EEFFEB",
   100: "#B9EFAD",

@@ -18,9 +18,15 @@ const SWATCH_INTERFACE = `interface Swatch {
   "700": string;
   "800": string;
   "900": string;
-}\n`;
+}`;
 
 const validHex = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+const constructSwatchString = (name, palette) => `
+/**
+ * **NOTE**: If *at all* possible, use tailwind classes over this!
+ */
+export const ${ name }: Swatch = {\n${palette}\n};`;
 
 /**
  * Takes in a swatch and returns a string to be inserted into the theme.ts file that represents that swatch
@@ -45,9 +51,9 @@ function constructTsSwatch(swatch, name) {
     return false;
   }
 
-  const objectStrings = entries.map(([key, color]) => `  ${parseInt(key, 10)}: "${color}",`).join("\n");
+  const paletteString = entries.map(([key, color]) => `  ${parseInt(key, 10)}: "${color}",`).join("\n");
 
-  return `export const ${ name }: Swatch = {\n${objectStrings}\n};`
+  return constructSwatchString(name, paletteString);
 }
 
 function rebuildThemeTsFile() {
@@ -64,7 +70,7 @@ function rebuildThemeTsFile() {
         }
       }
 
-      const themeFileContents = `${SWATCH_INTERFACE}\n${tsSwatchConsts.join("\n\n")}\n`;
+      const themeFileContents = `${SWATCH_INTERFACE}\n${tsSwatchConsts.join("\n")}\n`;
       fs.writeFileSync(THEME_TS_FILE_LOCATION, themeFileContents, "utf-8");
 
       return true;

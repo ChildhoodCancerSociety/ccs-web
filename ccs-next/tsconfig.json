@@ -16,9 +16,9 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "ccs@components": ["components/index.ts"],
-      "ccs@layout": ["layout/index.ts"],
-      "ccs@util/*": ["util/*"]
+      "ccs@components": ["src/components/index.ts"],
+      "ccs@structure": ["src/structure/index.ts"],
+      "ccs@util/*": ["src/utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
