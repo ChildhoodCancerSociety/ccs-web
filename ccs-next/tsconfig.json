@@ -17,8 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "ccs@components": ["components/index.ts"],
-      "ccs@layout": ["layout/index.ts"],
-      "ccs@util/*": ["util/*"]
+      "ccs@structure": ["structure/index.ts"],
+      "ccs@util/*": ["utils/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
