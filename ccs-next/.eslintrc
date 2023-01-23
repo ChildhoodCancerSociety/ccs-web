@@ -22,7 +22,7 @@
     "@typescript-eslint/no-unused-vars": 0,
     "@next/next/no-html-link-for-pages": ["warn", "ccs-next/pages"],
     "jsdoc/require-jsdoc": 0,
-    "no-console": ["warn", { "allow": ["error"] }]
+    "no-console": ["warn", { "allow": ["error", "warn"] }]
   },
   "parserOptions": {
     "project": "**/tsconfig.json"
