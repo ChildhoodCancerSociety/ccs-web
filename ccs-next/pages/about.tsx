@@ -23,7 +23,7 @@ const AboutPageNew: React.FC = function FC() {
         <title />
       </Head>
       <main>
-        <div>
+        <div className="h-[10000px] bg-primary-400 from-primary-400 to-primary-50">
           test 2
         </div>
       </main>

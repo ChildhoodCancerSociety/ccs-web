@@ -45,10 +45,10 @@ export const isMobile = (opts: {
 
 /**
  *
- * @param func debounce function
- * @param wait time to wait, defaults to 166ms which is ~10 frames at 60Hz
- * @param immediate whether to call the debounce function immediately
- * @returns
+ * @param {() => void} func function to debounce
+ * @param {number} wait time to wait, defaults to 166ms which is ~10 frames at 60Hz
+ * @param {boolean} immediate whether to call the debounce function immediately
+ * @returns {() => void} returns the function now with debouncing baked in
  */
 export const debounce = (func: Function, wait = 166, immediate = false) => {
   let timeout: undefined | number | NodeJS.Timeout;
@@ -57,7 +57,7 @@ export const debounce = (func: Function, wait = 166, immediate = false) => {
     const context = this;
     // eslint-disable-next-line prefer-rest-params
     const args = arguments;
-    const later = function () {
+    const later = function later() {
       timeout = undefined;
       if (!immediate) func.apply(context, args);
     };
