@@ -53,7 +53,7 @@
       "target": "api::blog-post.blog-post",
       "mappedBy": "eventRelations"
     },
-    "startTime": {
+    "eventCreated": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -61,7 +61,7 @@
       },
       "type": "datetime"
     },
-    "endTime": {
+    "eventEnded": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -73,6 +73,14 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::event-type.event-type"
+    },
+    "eventUpdated": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "datetime"
     }
   }
 }

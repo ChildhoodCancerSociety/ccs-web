@@ -23,7 +23,7 @@
       "type": "richtext",
       "required": true
     },
-    "datePosted": {
+    "blogCreatedAt": {
       "type": "date",
       "required": true
     },
@@ -43,6 +43,9 @@
       "relation": "manyToOne",
       "target": "api::event.event",
       "inversedBy": "blogRelations"
+    },
+    "blogUpdatedAt": {
+      "type": "date"
     }
   }
 }
