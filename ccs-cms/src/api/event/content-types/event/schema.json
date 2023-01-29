@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Name": {
+    "eventName": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -25,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "Description": {
+    "eventDescription": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -33,7 +33,7 @@
       },
       "type": "text"
     },
-    "Masthead": {
+    "eventMasthead": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -46,6 +46,33 @@
           "localized": true
         }
       }
+    },
+    "blogRelations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-post.blog-post",
+      "mappedBy": "eventRelations"
+    },
+    "startTime": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "datetime"
+    },
+    "endTime": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "datetime"
+    },
+    "isActive": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event-type.event-type"
     }
   }
 }
