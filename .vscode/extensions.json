@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "christian-kohler.npm-intellisense",
+    "bradlc.vscode-tailwindcss",
+    "GitHub.vscode-pull-request-github"
+  ]
+}
