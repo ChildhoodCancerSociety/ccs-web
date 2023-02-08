@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -14,8 +16,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <main className={styles.main}>
-        <div className={styles.description}>
+{/*         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
@@ -37,9 +40,9 @@ export default function Home() {
               />
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className={styles.center}>
+        {/* <div className={styles.center}>
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -116,8 +119,10 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
+        
       </main>
+      <Footer />
     </>
   )
 }
