@@ -10,3 +10,5 @@ export const sleep = async (ms: number): Promise<void> => new Promise((res) => {
 });
 
 export const d = 2;
+
+export const c = 3;
