@@ -1,0 +1,7 @@
+node_modules/**
+.next/**
+.cache/**
+.tmp/**
+build/**
+**/*.d.ts
+scripts/**/*.js

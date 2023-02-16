@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "BlogPost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogTitle": {
+      "type": "string",
+      "required": true
+    },
+    "blogDescription": {
+      "type": "string"
+    },
+    "blogBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "blogCreatedAt": {
+      "type": "date",
+      "required": true
+    },
+    "blogPhotos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "eventRelations": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "blogRelations"
+    },
+    "blogUpdatedAt": {
+      "type": "date"
+    }
+  }
+}
