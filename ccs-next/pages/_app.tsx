@@ -63,12 +63,12 @@ const futuraRounded = localFont({
     },
   ],
   variable: '--font-futura-rounded'
-})
+});
 
 export default function App({ Component, pageProps }: AppProps) {
-    return(
-      <div className = {`${gothamRounded.variable} ${futuraRounded.variable} font-sans`} >
-        <Component {...pageProps} />
-      </div>
-    ) 
+  return(
+    <div className = {`${gothamRounded.variable} ${futuraRounded.variable} font-sans`}>
+      <Component {...pageProps} />
+    </div>
+  );
 }
