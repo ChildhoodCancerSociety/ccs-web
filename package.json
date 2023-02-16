@@ -1,0 +1,30 @@
+{
+  "name": "ccs-web",
+  "version": "0.1.0",
+  "description": "current monorepo for all ccs web-related development",
+  "main": "./scripts/auto.js",
+  "scripts": {
+    "test": "node e2e/e2e.js",
+    "start": "node scripts/auto.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChildhoodCancerSociety/ccs-web.git"
+  },
+  "keywords": [
+    "nextjs",
+    "next",
+    "strapi",
+    "cms",
+    "typescript"
+  ],
+  "author": "webdev@childhoodcancersociety.org",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChildhoodCancerSociety/ccs-web/issues"
+  },
+  "homepage": "https://github.com/ChildhoodCancerSociety/ccs-web#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
