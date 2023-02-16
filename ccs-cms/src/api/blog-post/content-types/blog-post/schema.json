@@ -4,18 +4,45 @@
   "info": {
     "singularName": "blog-post",
     "pluralName": "blog-posts",
-    "displayName": "Blog Post"
+    "displayName": "Blog Post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40,
+      "minLength": 3
     },
-    "Description": {
-      "type": "string"
+    "datecreated": {
+      "type": "date",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "required": true
+    },
+    "coverimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "dateupdated": {
+      "type": "datetime"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event",
+      "mappedBy": "blog_post"
     }
   }
 }
