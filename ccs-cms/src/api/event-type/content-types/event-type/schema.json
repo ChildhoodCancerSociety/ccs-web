@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event-type",
     "pluralName": "event-types",
-    "displayName": "Event Type"
+    "displayName": "EventType",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
     }
   },
   "attributes": {
-    "is_past": {
+    "IsPast": {
       "pluginOptions": {
         "i18n": {
           "localized": true

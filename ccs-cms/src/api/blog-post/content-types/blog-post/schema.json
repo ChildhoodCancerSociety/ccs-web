@@ -4,7 +4,7 @@
   "info": {
     "singularName": "blog-post",
     "pluralName": "blog-posts",
-    "displayName": "Blog Post",
+    "displayName": "BlogPost",
     "description": ""
   },
   "options": {
@@ -12,37 +12,40 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "blogTitle": {
       "type": "string",
-      "required": true,
-      "maxLength": 40,
-      "minLength": 3
+      "required": true
     },
-    "datecreated": {
+    "blogDescription": {
+      "type": "string"
+    },
+    "blogBody": {
+      "type": "richtext",
+      "required": true
+    },
+    "blogCreatedAt": {
       "type": "date",
       "required": true
     },
-    "body": {
-      "type": "string",
-      "required": true
-    },
-    "coverimg": {
+    "blogPhotos": {
       "type": "media",
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "allowedTypes": [
         "images",
-        "videos"
+        "files",
+        "videos",
+        "audios"
       ]
     },
-    "dateupdated": {
-      "type": "datetime"
-    },
-    "events": {
+    "eventRelations": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::event.event",
-      "mappedBy": "blog_post"
+      "inversedBy": "blogRelations"
+    },
+    "blogUpdatedAt": {
+      "type": "date"
     }
   }
 }
