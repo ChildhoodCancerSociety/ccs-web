@@ -1,1 +1,100 @@
-/*# sourceMappingURL=adventureTedStyles.css.map */
+#adventurer {
+  color: #452264;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#hero {
+  width: 100%;
+  opacity: 0.8;
+}
+
+#heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #452264;
+  font-size: 3em;
+}
+
+#stats1 {
+  background-color: #52B788;
+}
+
+#stats2 {
+  background-color: rgba(82, 183, 136, 0.7);
+}
+
+#stats3 {
+  background-color: #3D926A;
+}
+
+#tedHand {
+  width: 10%;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#tedPose {
+  width: 100%;
+}
+
+.background {
+  background-color: #573873;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.statsText {
+  margin-left: 2%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding: 1%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: #52B788;
+  border: none;
+  padding: 1.5%;
+  color: white;
+  border-radius: 12px;
+}
+button:hover {
+  box-shadow: 0px 8px 16px #3D926A;
+  background-color: #3D926A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+p, button, a {
+  font-family: "Futura Round", sans-serif;
+}
+
+@media only screen and (min-width: 32.5em) {
+  #gridRight {
+    margin-left: 5%;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  iframe {
+    margin-top: 20%;
+  }
+}/*# sourceMappingURL=adventureTedStyles.css.map */
