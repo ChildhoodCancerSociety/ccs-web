@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col">
       <section className="bg-white flex-grow flex flex-col justify-center">
         <div className="container m-auto">
           <h1 className="text-slate-900 text-4xl text-center font-bold py-6">Contact Us!</h1>
@@ -20,7 +20,7 @@ function Contact() {
         </div>
       </section>
       <section className="bg-purple-900 flex-shrink">
-        <div className="container m-auto text-center flex flex-col justify-center items-center">
+        <div className="container m-auto text-center flex flex-col justify-center">
           <form className="py-8 w-full">
             <input type="text" className="bg-slate-50 w-[50%] py-2 px-3 rounded-md m-4 text-slate-900" placeholder="Name" />
             <input type="email" className="bg-slate-50 w-[50%] py-2 px-3 rounded-md m-4 text-slate-900" placeholder="Email" />
