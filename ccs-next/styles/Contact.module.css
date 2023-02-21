@@ -1,0 +1,7 @@
+.col {
+  @apply flex flex-col;
+}
+
+.form-input {
+  @apply bg-slate-50 w-[50%] py-2 px-3 rounded-md m-4 text-slate-900;
+}
