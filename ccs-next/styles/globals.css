@@ -6,8 +6,9 @@
   nav {
     font-family: --font-gotham-rounded, system-ui, sans-serif;
   }
-    button {
-      font-family: --font-futura-rounded, system-ui, sans-serif;
+  
+  button {
+    font-family: --font-futura-rounded, system-ui, sans-serif;
   }
 
   footer li:not(:first-child){
@@ -24,6 +25,7 @@
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+}
 
 @layer base {
   body {
