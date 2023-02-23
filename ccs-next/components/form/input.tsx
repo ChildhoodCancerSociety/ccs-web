@@ -7,6 +7,19 @@ interface InputProps {
   onInputChange: (str: string) => void;
 }
 
+/**
+ * TODO:
+ * - allow for custom styling via props
+ * - only allow specific unit measurements
+ * - create a useEffect hook that runs whenever the input state changes: https://react.dev/reference/react/useEffect
+ * - expose all input props to this function component
+ *
+ * @param root0
+ * @param root0.unitMeasurement
+ * @param root0.trailingText
+ * @param root0.placeholder
+ * @param root0.onInputChange
+ */
 const Input: React.FC<InputProps> = function Input({ unitMeasurement, trailingText, placeholder, onInputChange }: InputProps) {
   const [input, setInput] = useState<string>("");
 
