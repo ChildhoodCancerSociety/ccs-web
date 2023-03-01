@@ -19,14 +19,14 @@ $body: 'Futura Round', sans-serif;
     opacity: .8;
 }
 
-#heroText{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $mainPurple;
-    font-size: 3em;
-}
+// #heroText{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     color: $mainPurple;
+//     font-size: 3em;
+// }
 
 #stats1{
     background-color: $mainGreen;
@@ -50,6 +50,10 @@ $body: 'Futura Round', sans-serif;
     width: 100%;
 }
 
+#quotes{
+    position: relative;
+}
+
 //CLASSES
 .background{
     background-color: $secondaryPurple;
@@ -67,6 +71,16 @@ $body: 'Futura Round', sans-serif;
     padding: 1%;
 }
 
+.quoteSlides{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $mainPurple;
+    font-size: 2em;
+}
+
 //ELEMENTS
 a{
     text-decoration: none;
@@ -79,6 +93,7 @@ button{
     padding: 1.5%;
     color: white;
     border-radius: 12px;
+    cursor: pointer;
     &:hover{
         box-shadow: (0px 8px 16px $tertiaryGreen);
         background-color: $tertiaryGreen;
@@ -103,14 +118,11 @@ p, button, a{
 @media only screen and (min-width: 32.5em){
     #gridRight{
         margin-left: 5%;
+        margin-right: 5%;
     }
     
     .grid{
         grid-template-columns: 1fr 1fr;
-    }
-
-    iframe{
-        margin-top: 20%;
     }
 }
 
