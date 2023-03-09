@@ -81,7 +81,8 @@ $body: 'Quicksand', sans-serif;
     left: 50%;
     transform: translate(-50%, -50%);
     color: $mainPurple;
-    font-size: 2em;
+    text-align: center;
+    width: 100%;
 }
 
 //ELEMENTS
@@ -131,4 +132,7 @@ p, button, a{
 
 //LARGE
 @media only screen and (min-width: 60em){
+    .quoteSlides{
+        font-size: 2em;
+    }
 }
