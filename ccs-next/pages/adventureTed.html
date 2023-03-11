@@ -6,11 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/globals.css">
+    <link rel="stylesheet" href="../styles/nav.css">
     <link rel="stylesheet" href="../styles/adventureTedStyles.css">
     <title>Adventure Ted Program</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href='/'>
+                <image src="../images/logo.png" alt="logo" class='logo-nav' />
+            </a>
+            <div class='logo-nav-txt'><a href='/'>Childhood Cancer Society</a></div>
+
+            <ul class='desktop-nav'>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/program'>Adventure Ted Program</a></li>
+                <li><a href='/events'>Events</a></li>
+                <li><a href='/volunteer'>Volunteer</a></li>
+                <li><a href='/store'>Store</a></li>
+                <li><a href='/about'>About</a></li>
+                <li><a href='/contact'>Contact</a></li>
+            </ul>
+
+            <div class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/program'>Adventure Ted Program</a></li>
+                    <li><a href='/events'>Events</a></li>
+                    <li><a href='/volunteer'>Volunteer</a></li>
+                    <li><a href='/store'>Store</a></li>
+                    <li><a href='/about'>About</a></li>
+                    <li><a href='/contract'>Contact</a></li>
+                </ul>
+            </div>
+
+            <div class='mobile-menu-icon' onclick="mobileMenu()">
+                <image src="../images/menu-icon-white.png" alt="Menu Icon" id="menuIcon" />
+            </div>
+
+            <button class='donate-button'>
+                <div>
+                    <div class='donate-label'>
+                        <image src="../images/white-heart.png" alt="Donate" class="heart-icon" /> Donate
+                    </div>
+                </div>
+            </button>
+
+        </nav>
+
+        <div class='mobile-donate-btn'>
+            <a href="">
+                <image src="../images/white-heart.png" alt="Donate" class="heart-icon" />
+                <div>Donate</div>
+            </a>
+        </div>
+
+    </header>
+
     <section id="quotes">
         <img src="../images/placeholder-image.webp" alt="" id="hero">
         <!-- <h1 id="heroText">Adventure Begins with Ted!</h1> -->
@@ -19,7 +72,8 @@
             <h2>"I felt special...Adventure Ted means a lot to me" </h2>
         </div>
         <div class="quoteSlides">
-            <h2>"We can't thank you enough and I hope you all truly know what you’re doing is inspiring, sparking so much joy, and bringing a smile to these families’ faces when they need it most."</h2>
+            <h2>"We can't thank you enough and I hope you all truly know what you’re doing is inspiring, sparking so
+                much joy, and bringing a smile to these families’ faces when they need it most."</h2>
         </div>
         <div class="quoteSlides">
             <h2>"It was truly a once in a lifetime experience."</h2>
@@ -28,7 +82,8 @@
             <h2>"Thank you again for igniting so much adventure, fun, and magic into our lives!"</h2>
         </div>
         <div class="quoteSlides">
-            <h2>"Everything was perfect from start to finish. We will definitely hold these memories close to our heart and be forever grateful."</h2>
+            <h2>"Everything was perfect from start to finish. We will definitely hold these memories close to our heart
+                and be forever grateful."</h2>
         </div>
 
     </section>
@@ -56,8 +111,8 @@
 
     <section class="grid">
         <div id="stats1">
-            <h1 class="statsText">##</h1>
-            <h2 class="statsText">wish grants were made possible in 2022</h2>
+            <h1 class="statsText" id="wishGrantsNumber">34</h1>
+            <h2 class="statsText">wishes have been granted!</h2>
         </div>
 
         <div>

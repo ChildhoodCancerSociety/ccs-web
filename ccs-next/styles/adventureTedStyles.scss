@@ -57,6 +57,11 @@ $body: 'Quicksand', sans-serif;
     position: relative;
 }
 
+#wishGrantsNumber{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 //CLASSES
 .background{
     background-color: $secondaryPurple;
@@ -72,6 +77,7 @@ $body: 'Quicksand', sans-serif;
     margin-top: 0%;
     margin-bottom: 0%;
     padding: 1%;
+    text-align: center;
 }
 
 .quoteSlides{
@@ -83,6 +89,7 @@ $body: 'Quicksand', sans-serif;
     color: $mainPurple;
     text-align: center;
     width: 100%;
+    padding:1%;
 }
 
 //ELEMENTS

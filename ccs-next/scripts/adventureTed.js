@@ -31,3 +31,16 @@ window.onload= function () {
     setInterval(function(){ 
         plusSlides(1);
     }, 5000); } 
+
+//nav
+function mobileMenu() {
+    var menu = document.getElementById("mobileNav");
+    var icon = document.getElementById("menuIcon");
+    if (icon.getAttribute('src') == "./menu-icon-white.png") {
+      icon.src = "./close-icon-white.png";
+      menu.style.left = '0';
+    } else {
+      icon.src = "./menu-icon-white.png";
+      menu.style.left = '-100%';
+    }
+  }
