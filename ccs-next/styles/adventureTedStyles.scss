@@ -1,0 +1,145 @@
+//DECLARATIONS
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+$mainPurple: #452264;
+$secondaryPurple: #573873;
+$mainGreen: #52B788;
+$secondaryGreen: rgba(82, 183, 136, 0.7);
+$tertiaryGreen: #3D926A;
+$headers: 'Nunito', sans-serif;
+$body: 'Quicksand', sans-serif;
+
+//IDs
+#adventurer{
+    color: $mainPurple;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#hero{
+    width: 100%;
+    opacity: .8;
+}
+
+// #heroText{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     color: $mainPurple;
+//     font-size: 3em;
+// }
+
+#stats1{
+    background-color: $mainGreen;
+}
+
+#stats2{
+    background-color: $secondaryGreen;
+}
+
+#stats3{
+    background-color: $tertiaryGreen;
+}
+
+#tedHand{
+    width:10%;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#tedPose{
+    width: 100%;
+}
+
+#quotes{
+    position: relative;
+}
+
+#wishGrantsNumber{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+//CLASSES
+.background{
+    background-color: $secondaryPurple;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.statsText{
+    margin-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+    text-align: center;
+}
+
+.quoteSlides{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $mainPurple;
+    text-align: center;
+    width: 100%;
+    padding:1%;
+}
+
+//ELEMENTS
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: $mainGreen;
+    border: none;
+    padding: 1.5%;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    &:hover{
+        box-shadow: (0px 8px 16px $tertiaryGreen);
+        background-color: $tertiaryGreen;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $headers;
+}
+
+iframe{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+p, button, a{
+    font-family: $body;
+}
+
+//MEDIUM
+@media only screen and (min-width: 32.5em){
+    #gridRight{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+//LARGE
+@media only screen and (min-width: 60em){
+    .quoteSlides{
+        font-size: 2em;
+    }
+}

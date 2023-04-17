@@ -1,0 +1,223 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-ccs-color: #452264;
+    --secondary-ccs-color: #52B788;
+  }
+  
+  
+  /* Start Nav Styles*/
+  
+  header{
+    position: sticky; 
+    top: 0;
+    width:100%;
+  }
+  
+  nav {
+    font-family:Nunito, sans-serif;
+    font-weight:bold;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0 1rem;
+    height:6rem;
+    width:100%;
+    background: var(--primary-ccs-color);
+    font-size: 1rem;
+  }
+  
+  nav a{
+      color:white;
+      text-decoration: none;
+  }
+  
+  nav li{
+    list-style-type: none;
+  }
+  
+  .logo-nav{
+    width:4rem;
+    display:block;
+    margin:auto;
+  }
+  
+  .logo-nav-txt{
+      width:100%;
+      text-align: center;
+  }
+  
+  .desktop-nav{
+    display:none;
+  }
+  
+  .mobile-nav{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:-100%;
+    display:flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items:center; 
+    width:100%;
+    height:100vh; 
+    padding:1rem;
+    background:var(--primary-ccs-color);  
+    text-align:center; 
+    transition: 300ms ease-in
+  }
+  
+  .mobile-nav ul {
+    width: 100%;
+  }
+  
+  .mobile-nav li{
+    padding:1rem;
+    width:100%;
+  }
+  
+  .mobile-nav li a{
+    width:100%;
+    height:auto;
+    display:block;
+  }
+  
+  .donate-button {
+    font-family: nunito, sans-serif;
+    background: var(--secondary-ccs-color);
+    color:white;
+    padding:.5rem 1rem;
+    border-radius: .25rem;
+    border:none;
+    display:none;
+    cursor: pointer;
+    font-size:1rem;
+  }
+  
+  .donate-label{
+    display: inline-block; 
+    vertical-align: middle;
+  }
+  
+  .heart-icon{
+    margin-right: .5rem; 
+    width:1rem;
+    height:1rem;
+    display:inline-block; 
+    vertical-align: top;
+  }
+  
+  .mobile-menu-icon{
+    display: inlineblock;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-icon img{
+      width:2rem;
+      height:2rem;
+      vertical-align: middle;
+  }
+  
+  .mobile-donate-btn{
+    display: flex;
+    justify-content:center;
+    background: var(--secondary-ccs-color);
+    width:100%;
+    height: 2.5rem;
+    padding: 0 1rem; 
+  }
+  
+  .mobile-donate-btn a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-family:Nunito, sans-serif;
+    font-weight:bold;
+    font-size: 1rem;
+    width:100%;
+    justify-content: center;
+  }
+  
+  @media(min-width: 768px){
+    
+    .logo-nav{
+      width:5rem;
+    }
+  }
+  
+  @media(min-width: 1024px){
+  
+    .logo-nav-txt{ 
+      display:none; 
+    }
+  
+    .desktop-nav{
+      display:flex;
+    }
+  
+    .mobile-nav{
+      display: none;
+    }
+  
+    .desktop-nav li{
+      display: inline-block; 
+      padding: 0 1rem;
+    }
+  
+    .donate-button {
+      display:block;
+    }
+  
+    .mobile-menu-icon{
+      display: none;
+    }
+  
+    .mobile-donate-btn{
+      display:none;
+    }
+    
+  }
+  
+  @media (min-width: 1440px) {
+        
+    nav{
+      padding: 0 6rem;
+    }
+  
+   .logo-nav-txt{ 
+      display:inline-block;
+      text-align: left;
+      width:20%;
+    }
+  
+    .donate-button{
+      display:inline-block
+    }
+  
+    .mobile-menu-icon{
+      display: none;
+    }
+        
+  }
+  
+  /* End Nav Styles*/
+  
+  /* Start Footer Styles*/
+  
+  
+  
+  /* End Footer Styles*/
