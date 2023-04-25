@@ -6,7 +6,7 @@
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "[javascript][typescript][typescriptreact]": {
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 160,
+    "editor.wordWrapColumn": 80,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "files.associations": {
@@ -17,9 +17,11 @@
   },
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true 
+    "source.fixAll": true
   },
   "[typescript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

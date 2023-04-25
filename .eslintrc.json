@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "ccs", "ccs/typescript", "ccs/prettier"],
+  "ignorePatterns": ["**.config.js"],
+  "rules": {
+    "react/function-component-definition": 0,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/order": 0
+  }
+}
