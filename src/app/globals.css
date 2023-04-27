@@ -3,8 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+  html,
   body {
-    @apply bg-green-50 font-sans;
+    height: 100%;
+  }
+
+  body {
+    @apply bg-primary-50 font-sans;
+  }
+
+  h1 {
+    @apply text-2xl font-bold md:text-3xl;
+  }
+  h2 {
+    @apply text-xl font-semibold;
+  }
+  h3 {
+    @apply text-lg font-medium;
   }
 
   code {

@@ -9,11 +9,11 @@ const GridItemPreview: React.FC<DropdownItem> = ({
 }) => {
   return (
     <Link
-      className="dropdown-link text-green-50 hover:text-white text-xs"
+      className="dropdown-link text-primary-50 hover:text-white text-xs"
       href={path}
     >
       <div className="flex flex-row items-center">
-        <div className="box-content dropdown-img-container p-1 rounded-full bg-green-300 flex-shrink-0 self-start z-10">
+        <div className="box-content dropdown-img-container p-1 rounded-full bg-primary-300 flex-shrink-0 self-start z-10">
           <Image
             width={3.75 * 16}
             height={3.75 * 16}
@@ -22,7 +22,7 @@ const GridItemPreview: React.FC<DropdownItem> = ({
             alt={display}
           />
         </div>
-        <div className="relative -ml-8 pl-2 pr-4 py-1.5 h-12 active:ring-inset active:ring-green-300/75 active:ring-4 z-0 rounded-r-lg flex-grow flex items-center">
+        <div className="relative -ml-8 pl-2 pr-4 py-1.5 h-12 active:ring-inset active:ring-primary-300/75 active:ring-4 z-0 rounded-r-lg flex-grow flex items-center">
           <div className="ml-8">
             <div
               className={`${
@@ -32,7 +32,7 @@ const GridItemPreview: React.FC<DropdownItem> = ({
             >
               {display}
             </div>
-            {/* <p className="text-xs text-green-100/90 font-normal">
+            {/* <p className="text-xs text-primary-100/90 font-normal">
               {description}
             </p> */}
           </div>

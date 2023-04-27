@@ -1,5 +1,5 @@
 .container {
-  @apply max-w-6xl mx-auto;
+  @apply mx-auto max-w-6xl px-4;
 }
 
 .nav-item .dropdown {
@@ -21,14 +21,14 @@
   content: "";
   position: absolute;
   bottom: -2rem;
-  left: 0;
-  width: 100px;
+  left: -1rem;
+  right: -1rem;
   height: 2rem;
 }
 
 .nav-item:has(div):hover::before {
   width: 100px;
-  height: 3rem;
+  height: 2rem;
 }
 
 .nav-item:has(div)::after {
@@ -52,7 +52,7 @@
   content: "";
   opacity: 1;
   transform: translate3d(0, 0, 0) rotate(135deg) rotate3d(1, 0, 0, 0);
-  @apply rounded-sm bg-green-800;
+  @apply bg-primary-800 rounded-sm;
 }
 
 .dropdown-link,
@@ -62,5 +62,5 @@
 }
 
 .dropdown-link:hover .dropdown-img-container {
-  @apply ring-2 ring-inset ring-green-50;
+  @apply ring-primary-50 ring-2 ring-inset;
 }

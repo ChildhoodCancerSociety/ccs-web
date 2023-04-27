@@ -1,8 +1,9 @@
+import { Logo } from "@/atoms";
+
 import DropdownGrid from "./DropdownGrid";
 import NavItem from "./NavItem";
 import type { NavItemProps } from "./types";
 import { DropdownItem } from "./types";
-import { Logo } from "@/atoms";
 
 const imgSize = `${3.75 * 16}`;
 
@@ -100,17 +101,17 @@ const navItems: NavItemProps[] = [
 
 const Header: React.FC = () => (
   <>
-    <div className="bg-green-700 absolute h-12 md:h-16 w-full top-0 z-0" />
-    <header className="bg-green-700/90 h-12 md:h-16 ease-in rounded-b-md sticky top-0 backdrop-blur z-50 transition-all duration-300">
-      <div className="m-auto h-full py-2 px-4 max-w-6xl flex w-full md:items-center">
+    <div className="absolute top-0 z-0 h-12 w-full rounded-b-md bg-primary-700 md:h-16" />
+    <header className="sticky top-0 z-50 h-12 rounded-b-md bg-primary-600/90 backdrop-blur transition-all duration-300 ease-in md:h-16">
+      <div className="container flex h-full w-full py-2 md:items-center">
         <div className="mt-6">
           <Logo />
         </div>
         {/* <div className="text-lg md:text-xl mt-1 font-extrabold text-neutral-50 ml-2 max-w-[180px] leading-none md:leading-none">
           Childhood Cancer Society
         </div> */}
-        <nav className="flex-grow z-10">
-          <ul className="flex flex-col md:flex-row justify-end">
+        <nav className="z-10 flex-grow">
+          <ul className="flex h-8 flex-col justify-end md:flex-row">
             {navItems.map((item) => (
               <NavItem key={`${item.display}${item.path}`} {...item} />
             ))}

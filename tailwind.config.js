@@ -1,25 +1,34 @@
 const theme = require("@ccs-dev/tailwind");
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
+theme.theme.colors.green = {
+  ...theme.theme.colors.green,
+}
 module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    ...theme.theme,
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      ...theme.theme.extend,
       colors: {
-        green: {
+        primary: {
           ...theme.theme.colors.green,
-          700: "#196510"
-        }
+        },
+        header: "rgb(88 182 9)",
+        emerald: colors.emerald,
+        lime: colors.lime,
+        teal: colors.teal,
+        indigo: colors.indigo
+      },
+      fontFamily: {
+        sans: ["var(--font-poppins)", "sans-serif"],
+        mono: ["var(--font-code)", "monospace"]
       }
     },
-    ...theme.theme,
   },
   plugins: [],
 };
+console.log(module.exports.theme.fontFamily)
